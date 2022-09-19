@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5D2D2"
+    tools:context=".Activity.SelfEvalution">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/mainScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#F5D2D2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ops_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/welcome_txt"
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/gilroy_extra_bold"
+                        android:text="Ops. Particulars"
+                        android:textColor="#333232" />
+
+                    <ImageView
+                        android:id="@+id/close"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_baseline_close_24"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/gilroy_extra_bold"
+                        android:text="Work Consistency"
+                        android:textColor="#D0322B2B"
+                        android:textSize="18dp" />
+
+                    <androidx.appcompat.widget.AppCompatRatingBar
+                        android:id="@+id/work_consis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        android:theme="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/gilroy_extra_bold"
+                        android:text="Communication"
+                        android:textColor="#D0322B2B"
+                        android:textSize="18dp" />
+
+                    <androidx.appcompat.widget.AppCompatRatingBar
+                        android:id="@+id/communication"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        android:theme="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/gilroy_extra_bold"
+                        android:text="Independent Work"
+                        android:textColor="#D0322B2B"
+                        android:textSize="18dp" />
+
+                    <androidx.appcompat.widget.AppCompatRatingBar
+                        android:id="@+id/independent_work"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        android:theme="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/gilroy_extra_bold"
+                        android:text="Team Work"
+                        android:textColor="#D0322B2B"
+                        android:textSize="18dp" />
+
+                    <androidx.appcompat.widget.AppCompatRatingBar
+                        android:id="@+id/team_work"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        android:theme="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/gilroy_extra_bold"
+                        android:text="Honestly Towards Work"
+                        android:textColor="#D0322B2B"
+                        android:textSize="18dp" />
+
+                    <androidx.appcompat.widget.AppCompatRatingBar
+                        android:id="@+id/honestly_towards"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        android:theme="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/gilroy_extra_bold"
+                        android:text="Target Achieved"
+                        android:textColor="#D0322B2B"
+                        android:textSize="18dp" />
+
+                    <androidx.appcompat.widget.AppCompatRatingBar
+                        android:id="@+id/target_achieved"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        android:theme="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/gilroy_extra_bold"
+                        android:text="Client Relations"
+                        android:textColor="#D0322B2B"
+                        android:textSize="18dp" />
+
+                    <androidx.appcompat.widget.AppCompatRatingBar
+                        android:id="@+id/client_relations"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        android:theme="@style/RatingBar"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/gilroy_extra_bold"
+                        android:text="Sales Technique"
+                        android:textColor="#D0322B2B"
+                        android:textSize="18dp" />
+
+                    <androidx.appcompat.widget.AppCompatRatingBar
+                        android:id="@+id/sales_tech"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        android:theme="@style/RatingBar" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hr_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/gilroy_extra_bold"
+                        android:text="HR Particulars"
+                        android:textColor="#333232" />
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_baseline_close_24"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/gilroy_extra_bold"
+                        android:text="Punctuality &amp; Attendance"
+                        android:textColor="#D0322B2B"
+                        android:textSize="18dp" />
+
+                    <androidx.appcompat.widget.AppCompatRatingBar
+                        android:id="@+id/punctuality_attendance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        android:theme="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/gilroy_extra_bold"
+                        android:text="Compliance Towards COC"
+                        android:textColor="#D0322B2B"
+                        android:textSize="18dp" />
+
+                    <androidx.appcompat.widget.AppCompatRatingBar
+                        android:id="@+id/compliance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        android:theme="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/gilroy_extra_bold"
+                        android:text="Dress Code &amp; ID Card"
+                        android:textColor="#D0322B2B"
+                        android:textSize="18dp" />
+
+                    <androidx.appcompat.widget.AppCompatRatingBar
+                        android:id="@+id/dress_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        android:theme="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/gilroy_extra_bold"
+                        android:text="Team Feedback"
+                        android:textColor="#D0322B2B"
+                        android:textSize="18dp" />
+
+                    <androidx.appcompat.widget.AppCompatRatingBar
+                        android:id="@+id/team_feedback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        android:theme="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/gilroy_extra_bold"
+                        android:text="Floor Behaviour"
+                        android:textColor="#D0322B2B"
+                        android:textSize="18dp" />
+
+                    <androidx.appcompat.widget.AppCompatRatingBar
+                        android:id="@+id/floor_behaviour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        android:theme="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/gilroy_extra_bold"
+                        android:text="Mile Stone"
+                        android:textColor="#D0322B2B"
+                        android:textSize="18dp" />
+
+                    <androidx.appcompat.widget.AppCompatRatingBar
+                        android:id="@+id/mile_stone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        android:theme="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/gilroy_extra_bold"
+                        android:text="Integrity"
+                        android:textColor="#D0322B2B"
+                        android:textSize="18dp" />
+
+                    <androidx.appcompat.widget.AppCompatRatingBar
+                        android:id="@+id/integrity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        android:theme="@style/RatingBar"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:text="Any Remarks"
+                    android:textColor="#D0322B2B"
+                    android:textSize="15dp" />
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/remark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_btn_curved_square"
+                        android:inputType="textMultiLine"
+                        android:maxLines="10"
+                        android:overScrollMode="always"
+                        android:padding="10dp"
+                        android:scrollIndicators="end"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:textColor="#838A92"
+                        android:textColorHint="#838A92"
+                        android:textSize="15dp" />
+                </androidx.core.widget.NestedScrollView>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/save_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_btn"
+                android:fontFamily="@font/gilroy_extra_bold"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="Submit"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:progress="80"
+                android:theme="@style/Widget.MaterialComponents.ActionBar.Primary"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

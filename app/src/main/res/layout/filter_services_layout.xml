@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_alert"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#2A3B73"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/welcome_txt"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/gilroy_extra_bold"
+            android:gravity="center"
+            android:text="Report Filter "
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_close_white"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/gilroy_extra_bold"
+            android:text="From Date"
+            android:textColor="#D0322B2B"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/from_date"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_btn_curved_square"
+            android:drawableEnd="@drawable/ic_baseline_date_range_24"
+            android:focusable="false"
+            android:fontFamily="@font/gilroy_extra_bold_light"
+            android:hint="From Date"
+            android:maxLength="100"
+            android:maxLines="1"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/gilroy_extra_bold"
+            android:text="To Date"
+            android:textColor="#D0322B2B"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/to_date"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_btn_curved_square"
+            android:drawableEnd="@drawable/ic_baseline_date_range_24"
+            android:focusable="false"
+            android:fontFamily="@font/gilroy_extra_bold_light"
+            android:hint="To Date"
+            android:maxLength="100"
+            android:maxLines="1"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/filter_report"
+                style="@style/TextAppearance.AppCompat.Widget.PopupMenu.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn"
+                android:drawablePadding="10dp"
+                android:focusable="false"
+                android:hint="Filter Report"
+                android:padding="10dp"
+                android:textColorHint="#ffffff" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/reset"
+            style="@style/TextAppearance.AppCompat.Widget.PopupMenu.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_btn"
+            android:drawableStart="@drawable/ic_refresh_black_24dp"
+            android:drawablePadding="10dp"
+            android:focusable="false"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Today's Report"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

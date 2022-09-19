@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E8EC"
+    tools:context=".Activity.FollowupReport">
+
+    <LinearLayout
+        android:id="@+id/altno_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/client_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_btn_curved_square"
+            android:drawableEnd="@drawable/ic_baseline_search_24"
+            android:fontFamily="@font/gilroy_extra_bold_light"
+            android:hint="Client Mobile Number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeContainer_followup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/altno_linear">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/followup_rv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

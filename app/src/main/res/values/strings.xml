@@ -1,0 +1,182 @@
+<resources>
+    <string name="app_name">Dhruv Iconic</string>
+
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_share">Share</string>
+
+    <string name="lbl_set_profile_photo">Set attendance image</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+
+    <string name="api_key">AIzaSyAWZkWSoh_GSs_94yB3MHa2q7K8qVbmDcs</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="youAreNotUpdatedTitle">Update Available</string>
+    <string name="youAreNotUpdatedMessage">A new version of App is available. Please update to new version</string>
+    <string name="youAreNotUpdatedMessage1"> now</string>
+    <string name="update">Update</string>
+
+
+    <array name="date_slot">
+        <item>01 To 10</item>
+        <item>11 To 20</item>
+        <item>21 To 31</item>
+    </array>
+
+    <array name="mode">
+        <item>Telephonic</item>
+        <item>Office Meeting</item>
+        <item>Outside Meeting</item>
+        <item>Site Visit</item>
+    </array>
+
+    <array name="candidate_mode">
+        <item>Telephonic</item>
+        <item>Offline</item>
+        <item>Online</item>
+    </array>
+
+    <array name="source">
+        <item>Fb</item>
+        <item>Fb IC New Lead</item>
+        <item>Fb Lead IR</item>
+        <item>Fb Old</item>
+        <item>Fb IC</item>
+        <item>IDC</item>
+        <item>Extracted</item>
+        <item>Extracted New</item>
+        <item>Extracted Data</item>
+        <item>99 Acres</item>
+        <item>Activity</item>
+        <item>Office</item>
+        <item>Personal Ref.</item>
+        <item>Customer Ref.</item>
+        <item>CSD</item>
+        <item>NSD</item>
+        <item>HSD</item>
+        <item>ASD</item>
+        <item>PSD</item>
+    </array>
+
+    <array name="lead_source">
+
+        <item>Fb</item>
+        <item>Fb IC New Lead</item>
+        <item>Fb Lead IR</item>
+        <item>Fb Old</item>
+        <item>Fb IC</item>
+        <item>IDC</item>
+        <item>Extracted</item>
+        <item>Extracted New</item>
+        <item>Extracted Data</item>
+        <item>99 Acres</item>
+        <item>Office</item>
+        <item>Personal Ref.</item>
+        <item>Customer Ref.</item>
+        <item>CSD</item>
+        <item>NSD</item>
+        <item>HSD</item>
+        <item>ASD</item>
+        <item>PSD</item>
+
+    </array>
+
+    <array name="source_others">
+        <item>Personal Ref.</item>
+        <item>Customer Ref.</item>
+        <item>CSD</item>
+        <item>NSD</item>
+        <item>HSD</item>
+        <item>ASD</item>
+        <item>PSD</item>
+    </array>
+
+    <array name="call_code_data">
+        <item>IN</item>
+        <item>NI</item>
+        <item>NR</item>
+        <item>NP</item>
+        <item>OFF</item>
+        <item>CB</item>
+    </array>
+
+    <array name="call_code_candidate">
+        <item>IN</item>
+        <item>NI</item>
+        <item>NR</item>
+        <item>NP</item>
+        <item>OFF</item>
+        <item>CB</item>
+        <item>Not Qualified</item>
+    </array>
+
+    <array name="status">
+        <item>On Going</item>
+        <item>WON</item>
+        <item>Loss</item>
+        <item>Meeting Scheduled</item>
+        <item>Meeting Done</item>
+        <item>Site Visit Scheduled</item>
+        <item>Site Visit Done</item>
+        <item>Login Process Client</item>
+        <item>None</item>
+    </array>
+
+    <array name="client_type">
+        <item>Warm Client</item>
+        <item>Hot Client</item>
+    </array>
+
+    <array name="status_all">
+        <item>All</item>
+        <item>On Going</item>
+        <item>WON</item>
+        <item>Loss</item>
+        <item>Meeting Client</item>
+        <item>Site Visited Client</item>
+        <item>Login Process Client</item>
+        <item>None</item>
+    </array>
+
+    <array name="status_candidate">
+        <item>Selected</item>
+        <item>Rejected</item>
+        <item>Hold</item>
+        <item>Drop</item>
+        <item>Scheduled Interview</item>
+        <item>Rescheduled Interview</item>
+        <item>Online</item>
+        <item>Blacklist</item>
+        <item>Abscond</item>
+        <item>None</item>
+    </array>
+
+    <array name="leave_typ">
+        <item>Casual</item>
+        <item>Earned</item>
+        <item>Sick</item>
+        <item>Unpaid</item>
+    </array>
+
+    <array name="report_type">
+        <item>Followup Date</item>
+        <item>Proceeding</item>
+    </array>
+
+    <array name="calling_report">
+        <item>All</item>
+        <item>Leads</item>
+        <item>Followups</item>
+    </array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

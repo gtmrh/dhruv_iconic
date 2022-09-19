@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Imrh4u/DhruvIconic/app/src/main/res/layout/activity_filter.xml" value="0.25" />
+        <entry key="..\:/Imrh4u/DhruvIconic/app/src/main/res/layout/fragment_sales_emp.xml" value="0.36666666666666664" />
+        <entry key="..\:/Projects/OfficeProject/DhruvIconic Project/New Code/DhruvIconic/app/src/main/res/layout/activity_apply_leave.xml" value="0.22" />
+        <entry key="..\:/Projects/OfficeProject/DhruvIconic Project/New Code/DhruvIconic/app/src/main/res/layout/activity_apply_resignation.xml" value="0.1921875" />
+        <entry key="..\:/Projects/OfficeProject/DhruvIconic Project/New Code/DhruvIconic/app/src/main/res/layout/activity_self_evalution.xml" value="0.1921875" />
+        <entry key="..\:/Projects/OfficeProject/DhruvIconic Project/New Code/DhruvIconic/app/src/main/res/layout/add_followup_layout.xml" value="0.1921875" />
+        <entry key="..\:/Projects/OfficeProject/DhruvIconic Project/New Code/DhruvIconic/app/src/main/res/layout/followup_details_list_layout.xml" value="0.1921875" />
+        <entry key="..\:/Projects/OfficeProject/DhruvIconic Project/New Code/DhruvIconic/app/src/main/res/layout/fragment_manager.xml" value="0.1921875" />
+        <entry key="..\:/Projects/OfficeProject/DhruvIconic Project/New Code/DhruvIconic/app/src/main/res/layout/fragment_sales_emp.xml" value="0.1921875" />
+        <entry key="..\:/Projects/OfficeProject/DhruvIconic Project/New Code/DhruvIconic/app/src/main/res/layout/leave_history_list.xml" value="0.33" />
+        <entry key="..\:/Projects/OfficeProject/DhruvIconic Project/New Code/DhruvIconic/app/src/main/res/menu/activity_home_drawer.xml" value="0.1921875" />
+        <entry key="..\:/Projects/OfficeProject/DhruvIconic Project/New Code/DhruvIconic/app/src/main/res/menu/filter_followup_menu.xml" value="0.1921875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

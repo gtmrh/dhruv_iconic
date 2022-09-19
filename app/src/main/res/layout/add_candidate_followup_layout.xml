@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#F5D2D2">
+
+    <ScrollView
+        android:id="@+id/mainScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#F5D2D2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/welcome_txt"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:gravity="center"
+                    android:text="Add Interview Details"
+                    android:textColor="#333232" />
+
+                <ImageView
+                    android:id="@+id/close"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:src="@drawable/ic_baseline_close_24" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/gilroy_extra_bold"
+                android:text="Hiring For"
+                android:textColor="#D0322B2B"
+                android:textSize="15dp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/hiring_for"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_btn_curved_square"
+                android:focusable="false"
+                android:fontFamily="@font/gilroy_extra_bold_light"
+                android:hint="Select Project"
+                android:maxLength="100"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/gilroy_extra_bold"
+                android:text="For Designation"
+                android:textColor="#D0322B2B"
+                android:textSize="15dp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/hiring_designation"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_btn_curved_square"
+                android:focusable="false"
+                android:fontFamily="@font/gilroy_extra_bold_light"
+                android:hint="Select Designation"
+                android:maxLength="100"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:id="@+id/name_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:text="Name"
+                    android:textColor="#D0322B2B"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/add_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_btn_curved_square"
+                    android:fontFamily="@font/gilroy_extra_bold_light"
+                    android:hint="Name"
+                    android:inputType="textAutoComplete"
+                    android:maxLength="100"
+                    android:maxLines="1"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/altno_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_extra_bold"
+                android:text="Number"
+                android:textColor="#D0322B2B"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/add_alt_no"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_btn_curved_square"
+                android:drawableEnd="@drawable/ic_baseline_stay_primary_portrait_24"
+                android:fontFamily="@font/gilroy_extra_bold_light"
+                android:hint="Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:id="@+id/location_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:text="Location"
+                    android:textColor="#D0322B2B"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/add_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_btn_curved_square"
+                    android:drawableEnd="@drawable/ic_baseline_add_location_24"
+                    android:fontFamily="@font/gilroy_extra_bold_light"
+                    android:hint="Add Location(City/Dist)"
+                    android:inputType="textAutoComplete"
+                    android:maxLines="1"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gilroy_extra_bold"
+                android:text="Mode"
+                android:textColor="#D0322B2B"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/mode"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_btn_curved_square"
+                android:entries="@array/candidate_mode"
+                android:padding="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gilroy_extra_bold"
+                android:text="Call Code For Data"
+                android:textColor="#D0322B2B"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/call_code"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_btn_curved_square"
+                android:entries="@array/call_code_candidate"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gilroy_extra_bold"
+                android:text="Status"
+                android:textColor="#D0322B2B"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/call_status"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_btn_curved_square"
+                android:entries="@array/status_candidate"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gilroy_extra_bold"
+                android:text="Remarks (If Any)"
+                android:textColor="#D0322B2B"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/remarks"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_btn_curved_square"
+                android:fontFamily="@font/gilroy_extra_bold_light"
+                android:hint=""
+                android:inputType="textAutoComplete"
+                android:maxLength="100"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:id="@+id/interview_date_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:text="Interview Date"
+                    android:textColor="#D0322B2B"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/next_followup_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_btn_curved_square"
+                    android:drawableEnd="@drawable/ic_baseline_date_range_24"
+                    android:focusable="false"
+                    android:fontFamily="@font/gilroy_extra_bold_light"
+                    android:hint="Enter Interview Date"
+                    android:maxLength="100"
+                    android:maxLines="1"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/joining_date_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:text="Joining Date"
+                    android:textColor="#D0322B2B"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/joining_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_btn_curved_square"
+                    android:drawableEnd="@drawable/ic_baseline_date_range_24"
+                    android:focusable="false"
+                    android:fontFamily="@font/gilroy_extra_bold_light"
+                    android:hint="Enter Joining Date"
+                    android:maxLength="100"
+                    android:maxLines="1"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/save_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_btn"
+                android:fontFamily="@font/gilroy_extra_bold"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="Save"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:progress="80"
+                android:theme="@style/Widget.MaterialComponents.ActionBar.Primary"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

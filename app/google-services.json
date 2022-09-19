@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "446435952760",
+    "project_id": "dhruv-iconic",
+    "storage_bucket": "dhruv-iconic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446435952760:android:68d044c5cb27d0fc82858d",
+        "android_client_info": {
+          "package_name": "com.rkvitsolutions.dhruviconic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446435952760-bqdk58ibvhq2kf4cuhunfs4uk4s1pkqp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbvLW5QvP0e8TfhH0ZZEFuBnUwZ6hqWDo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446435952760-bqdk58ibvhq2kf4cuhunfs4uk4s1pkqp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

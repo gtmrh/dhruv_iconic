@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_baseline_person_pin_24"
+            android:title="Profile"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/nav_new_followup"
+            android:icon="@drawable/ic_baseline_person_add_24"
+            android:title="New Followup" />
+
+        <item
+            android:id="@+id/nav_mark_attend"
+            android:icon="@drawable/ic_baseline_how_to_reg_24"
+            android:title="Mark Attendance" />
+
+        <item
+            android:id="@+id/nav_apply_leave"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            android:title="Leave Apply" />
+
+        <item
+            android:id="@+id/nav_apply_resign"
+            android:icon="@drawable/ic_outline_directions_run_24"
+            android:title="Apply Resignation" />
+
+        <item
+            android:id="@+id/nav_self_evaluation"
+            android:icon="@drawable/ic_baseline_star_rate_24"
+            android:title="Self- Evaluation Form" />
+
+        <item
+            android:id="@+id/nav_booking"
+            android:icon="@drawable/ic_baseline_pin_drop_24"
+            android:title="Inventory"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/nav_candidate"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Candidate" />
+
+        <item
+            android:id="@+id/nav_sales_hr"
+            android:icon="@drawable/ic_baseline_settings_phone_24"
+            android:title="Sales" />
+
+        <item
+            android:id="@+id/nav_followup_details"
+            android:icon="@drawable/ic_baseline_insert_drive_file_24"
+            android:title="Followup Report(By No.)" />
+
+        <item
+            android:id="@+id/nav_followup_all"
+            android:icon="@drawable/ic_baseline_insert_drive_file_24"
+            android:title="Followup Report(All)" />
+
+        <item
+            android:id="@+id/nav_self_target"
+            android:icon="@drawable/ic_baseline_adjust_24"
+            android:title="Self Target" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_arrow_back_black_24dp"
+                android:title="Logout" />
+
+            <item
+                android:id="@+id/nav_rateus"
+                android:icon="@drawable/ic_rate_review_black_24dp"
+                android:title="Rate Us" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="@string/menu_share" />
+
+            <item
+                android:id="@+id/nav_contactus"
+                android:icon="@drawable/ic_call_black_24dp"
+                android:title="Contact Us" />
+
+            <item
+                android:id="@+id/nav_about_us"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="AboutUs" />
+
+        </menu>
+    </item>
+
+</menu>
